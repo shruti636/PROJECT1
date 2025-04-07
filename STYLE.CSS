@@ -1,17 +1,27 @@
 body{
   text-align:center;
 }
-.btn{
-  height:200px;
-  width:200px;
+.btn {
+  width: 100%;
+  aspect-ratio: 1 / 1;
   border-radius: 20%;
-  border:10px solid black;
-  margin: 1.2rem;
+  border: 8px solid black;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.btn-container{
-  display:flex;
- justify-content: center;
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1rem;
 }
+
 .yellow{
   background-color:rgb(198, 198, 53);
 
@@ -31,4 +41,15 @@ body{
 }
 .userflash{
   background-color:aqua;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
 }

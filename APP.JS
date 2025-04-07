@@ -59,7 +59,7 @@ function checkAns() {
     h2.innerHTML = `Game Over! Your score was <b>${level}</b><br>Press any key to start.`;
     document.querySelector("body").style.backgroundColor="red";
     setTimeout(function(){
-      document.querySelector("body").style.backgroundColor="white";
+      document.querySelector("body").style.color="white";
     },150);
     reset();
   }
