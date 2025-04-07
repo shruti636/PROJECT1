@@ -26,3 +26,9 @@ body{
 .pink{
   background-color:rgb(184, 21, 48);
 }
+.flash{
+  background-color:white;
+}
+.userflash{
+  background-color:aqua;
+}
